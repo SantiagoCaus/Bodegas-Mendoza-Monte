@@ -1,0 +1,16 @@
+#productos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: baseline;
+    justify-items: center;
+    
+    
+}
+
+.card{
+    margin: 1rem auto;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    align-items: center;
+    object-fit: cover;
+}

@@ -1,0 +1,12 @@
+@mixin center-flex($display,$direction,$ejey, $ejex){    
+    display: $display;
+    flex-direction: $direction;
+    align-items: $ejey;
+    justify-content: $ejex;
+    
+}
+
+@mixin tamanios($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
