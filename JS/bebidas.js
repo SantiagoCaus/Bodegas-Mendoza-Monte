@@ -2,14 +2,14 @@ const bebidas = [
     {
         "id" : 1,
         "marca" : "Finca Gabriel",
-        "tipo" : "Champagne",
+        "tipo" : "Champagne Brut Nature",
         "precio" :  3300,
         "imagen" : "../IMG/finca-gabriel-brut-nature-espumante.jpg"
     },
     {
         "id" : 2,
         "marca" : "Finca Gabriel",
-        "tipo" : "Champagne",
+        "tipo" : "Champagne Espumante Demi Sec",
         "precio" : 3300,
         "imagen" : "../IMG/finca-gabriel-espumante-demiSec.jpeg"
     },
@@ -100,9 +100,9 @@ const bebidas = [
     {
         "id" : 15,
         "marca" : "Finca Gabriel",
-        "tipo" : "Cosecha Tardia",
+        "tipo" : "Dulce Natural",
         "precio" : 2400,
-        "imagen" : "../IMG/finca-gabriel-cosechaTardia.jpg"
+        "imagen" : "../IMG/finca-gabriel-dulceNatural.jpg"
     },
     {
         "id" : 16,
@@ -121,7 +121,7 @@ const bebidas = [
     {
         "id" : 18,
         "marca" : "Finca Gabriel",
-        "tipo" : "Rose Syrah",
+        "tipo" : "Vino Rose Syrah",
         "precio" : 2400,
         "imagen" : "../IMG/finca-gabriel-rose.jpg"
     },
@@ -174,4 +174,6 @@ const bebidas = [
         "precio" : 1900,
         "imagen" : "../IMG/premiado-malbec.jpg"
     }
-]
+];
+
+

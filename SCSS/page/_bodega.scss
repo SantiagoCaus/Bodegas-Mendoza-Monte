@@ -1,0 +1,150 @@
+#productos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: baseline;
+    justify-items: center;
+    font-size: large;
+    
+    
+}
+
+.card{
+    
+    margin: 1rem auto;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    align-items: center;
+            
+    
+}
+
+.navbar{
+    background-color: $primary-color;
+}
+.container-fluid{
+    display: flex;
+    justify-content: space-around;
+}
+// .titulo{
+//     text-align: center;
+//     font-size: 4em;
+//     text-shadow: 1px 1px 2px grey;
+// }
+
+
+.form-datos{
+    margin:20px;
+}
+.btn{
+    margin:2px;
+}
+// .dropdown-menu{
+//     background: rgba(rgb(207, 43, 43),rgb(rgb(201, 63, 63), 53, 53),rgb(201, 124, 124),rgb(255, 215, 215));
+// }
+
+.filtro{
+        display: flex;
+    flex-direction: column; 
+}
+#productos{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items:center;
+    flex-wrap: wrap;
+    gap:40px;
+    margin:0 auto;
+    padding: 80px;
+}
+.card{
+    box-shadow: 0.4px 1px 2px $secondary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+img{
+    height: 200px;
+    width: 200px;
+    object-fit:contain;
+}
+
+
+.filtro{
+    display: flex;
+    justify-content: space-around;
+    border:2px solid black;
+    box-shadow: 1px 1px 2px ;
+    margin:10px;
+    padding: 10px;
+}
+.filtro-radio{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.buscaTuBebida{
+    text-align: center;
+    font-size: 2em;
+    
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+i{
+    margin:5px;
+    font-size:20px;
+    color: $terciary-color;
+}
+#modal-body{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* CLase prueba ternario */
+
+.ofertaColor{
+    color:green;
+}
+.precioComun{
+    color:goldenrod;
+}
+
+#side_nav{
+    background-color: $terciary-color;
+    min-width: 250px;
+    max-width: 250px;
+    
+}
+.content{
+    min-height: 100vh;
+    
+}
+hr.h-color{
+    background:#eee;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.sidebar li.active{
+    background-color: #eee;
+    border-radius: 8px;
+}
+.sidebar li.active a, .sidebar li.active a:hover{
+    color:$primary-color;
+}
+
+.mi-carrito{
+    background-color: rgb(115, 130, 170);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
