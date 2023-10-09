@@ -1,0 +1,143 @@
+/* Mobile */
+@media (min-width:320px) and (max-width:576px){
+.main__encabezado{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;  
+}
+.descripcion{
+    font-size: 10px;
+    display: flex;
+    width: 100%;
+}
+.ver__mas{
+    width: 100%;
+}
+.icono{
+    width: 10px;
+}
+.titulo{
+    font-size: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.Destacados{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+.cuatro__imagenes{
+    
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+}
+.contacto{
+    font-size: 30px;
+
+}
+.visitanos__titulo{
+    font-size: 30px;
+}
+.datos{
+    display: flex;
+    flex-direction: column;
+    h3{
+        font-size: 20px;
+    }
+}
+.plan__visit{
+    font-size: 20px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Archivo de precios */
+.form{
+    margin: 0;
+}
+.full-screen-container{
+    height: 100%;
+}
+.login__button{
+    padding: 1em 1em;
+    font-size: 1rem;
+
+}
+
+}
+
+/* Tablet */
+@media only screen and (min-width:577px) and (max-width:991px){
+    .main__encabezado{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;}
+
+    
+        .titulo{
+            font-size: 90px;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;}
+            .ver__mas{
+                width: 100%;
+            }
+
+    .Destacados{
+        
+        
+        flex-wrap: wrap;
+    }
+    .cuatro__imagenes{
+        
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 1px;
+    }
+    .contacto{
+        font-size: 30px;
+
+    }
+    .datos{
+        display: flex;
+        flex-direction: column;
+    }
+    .datos__opcionales{
+        display: none;
+        
+    }
+    .background__uvas{
+        display: none;
+    }
+     /* Archivo de precios main */
+.login__container{
+    padding: 20px 20px;
+    margin: 30px 20px;
+    width: 80%;
+    height: 100vh;
+    max-width: 600px;
+}
+.login__button{
+    padding: 1em 1em;
+    font-size: 1rem;
+
+}
+
+
+
+
+}

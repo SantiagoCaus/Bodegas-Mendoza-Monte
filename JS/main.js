@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
 
 function guardarBebida(array){
-    let bebidaInput = document.getElementById("bebidaInput")
+    let bebidaInput = document.getElementById("tipoInput")
     let marcaInput = document.getElementById("marcaInput")
     let precioInput = document.getElementById("precioInput")
     
@@ -35,7 +35,7 @@ function guardarBebida(array){
             }).showToast();
     }else{
         
-    let bebidaIngresada = new Vino (array.length+1, bebidaInput.value, marcaInput.value, parseInt(precioInput.value), imagen);
+    let bebidaIngresada = new Vino (array.length+1, tipoInput.value, marcaInput.value, parseInt(precioInput.value), imagen);
     
     let nuevoProducto  =  document.createElement("div")
     nuevoProducto.innerHTML = `<div id=${bebidaIngresada.id} <div class="card" style="width: 14rem;">
@@ -111,7 +111,7 @@ function agregarAlCarrito(bebida){
         confirmButtonText : "Acepto",
         timer : 2000,
         confirmButtonColor : "black",
-        text : `La bebida ${bebida.marca} ha sido agregada al carrito`,
+        text : `La Bebida ${bebida.marca} ha sido agregada al carrito`,
         imageHeight : 300,
         imageWidth : 300,
         imageAlt : 'No encontrada'
@@ -152,9 +152,16 @@ function filtrarMalbec(){
     nuevoProducto.innerHTML = `<div id=${vino.id} <div class="card" style="width: 14rem;">
     <img src="${vino.imagen}" class="card-img-top" alt="...">
     <div class="card-body">
-        <h5 class="card-title">${vino.marca}</h5>
-        <p class="card-text">${vino.tipo}</p>
-        <p class="card-text">${vino.precio}</p>
+    <h5 class="card-title fs-2 py-2">${vino.marca}</h5>
+    <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"  style="height: 1px;">
+    <div class="progress-bar bg-danger" style="width: 100%"></div>
+    </div>
+        <p class="tipo fs-4 py-3">${vino.tipo}.</p>
+        <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"  style="height: 1px;">
+    <div class="progress-bar bg-danger" style="width: 100%"></div>
+    </div>
+
+        <p class="${vino.precio} fs-3 fw-bold  card-text text-success">$ ${vino.precio}</p>
     
         <button id="btn-carrito${vino.id}" class="btnCompra btn btn-danger">Agregar al carrito</button>
     </div>
@@ -188,9 +195,16 @@ function filtrarDulce(){
     nuevoProducto.innerHTML = `<div id=${vino.id} <div class="card" style="width: 14rem;">
     <img src="${vino.imagen}" class="card-img-top" alt="...">
     <div class="card-body">
-        <h5 class="card-title">${vino.marca}</h5>
-        <p class="card-text">${vino.tipo}</p>
-        <p class="card-text">${vino.precio}</p>
+    <h5 class="card-title fs-2 py-2">${vino.marca}</h5>
+    <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"  style="height: 1px;">
+    <div class="progress-bar bg-danger" style="width: 100%"></div>
+    </div>
+        <p class="tipo fs-4 py-3">${vino.tipo}.</p>
+        <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"  style="height: 1px;">
+    <div class="progress-bar bg-danger" style="width: 100%"></div>
+    </div>
+
+        <p class="${vino.precio} fs-3 fw-bold card-text text-success">$ ${vino.precio}</p>
     
         <button id="btn-carrito${vino.id}" class="btnCompra btn btn-danger">Agregar al carrito</button>
     </div>
@@ -224,9 +238,16 @@ function filtrarEspumante(){
     nuevoProducto.innerHTML = `<div id=${vino.id} <div class="card" style="width: 14rem;">
     <img src="${vino.imagen}" class="card-img-top" alt="...">
     <div class="card-body">
-        <h5 class="card-title">${vino.marca}</h5>
-        <p class="card-text">${vino.tipo}</p>
-        <p class="card-text">${vino.precio}</p>
+    <h5 class="card-title fs-2 py-2">${vino.marca}</h5>
+    <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"  style="height: 1px;">
+    <div class="progress-bar bg-danger" style="width: 100%"></div>
+    </div>
+        <p class="tipo fs-4 py-3">${vino.tipo}.</p>
+        <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"  style="height: 1px;">
+    <div class="progress-bar bg-danger" style="width: 100%"></div>
+    </div>
+
+        <p class="${vino.precio} fs-3 fw-bold  card-text text-success">$ ${vino.precio}</p>
     
         <button id="btn-carrito${vino.id}" class="btnCompra btn btn-danger">Agregar al carrito</button>
     </div>
@@ -260,9 +281,16 @@ function filtrarRoble(){
     nuevoProducto.innerHTML = `<div id=${vino.id} <div class="card" style="width: 14rem;">
     <img src="${vino.imagen}" class="card-img-top" alt="...">
     <div class="card-body">
-        <h5 class="card-title">${vino.marca}</h5>
-        <p class="card-text">${vino.tipo}</p>
-        <p class="card-text">${vino.precio}</p>
+    <h5 class="card-title fs-2 py-2">${vino.marca}</h5>
+    <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"  style="height: 1px;">
+    <div class="progress-bar bg-danger" style="width: 100%"></div>
+    </div>
+        <p class="tipo fs-4 py-3">${vino.tipo}.</p>
+        <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"  style="height: 1px;">
+    <div class="progress-bar bg-danger" style="width: 100%"></div>
+    </div>
+
+        <p class="${vino.precio} fs-3 fw-bold  card-text text-success">$ ${vino.precio}</p>
     
         <button id="btn-carrito${vino.id}" class="btnCompra btn btn-danger">Agregar al carrito</button>
     </div>
@@ -295,11 +323,18 @@ function filtrarCabernet(){
     nuevoProducto.innerHTML = `<div id=${vino.id} <div class="card" style="width: 14rem;">
     <img src="${vino.imagen}" class="card-img-top" alt="...">
     <div class="card-body">
-        <h5 class="card-title">${vino.marca}</h5>
-        <p class="card-text">${vino.tipo}</p>
-        <p class="card-text">${vino.precio}</p>
+    <h5 class="card-title fs-2 py-2">${vino.marca}</h5>
+    <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"  style="height: 1px;">
+    <div class="progress-bar bg-danger" style="width: 100%"></div>
+    </div>
+        <p class="tipo fs-4 py-3">${vino.tipo}.</p>
+        <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"  style="height: 1px;">
+    <div class="progress-bar bg-danger" style="width: 100%"></div>
+    </div>
+
+        <p class="${vino.precio} fs-3 fw-bold  card-text text-success">$ ${vino.precio}</p>
     
-    <button id ="btn-carrito${vino.id}" class="btnCompra btn btn-danger">Agregar al carrito</button>
+        <button id="btn-carrito${vino.id}" class="btnCompra btn btn-danger">Agregar al carrito</button>
     </div>
     </div>
     </div>`
@@ -329,11 +364,18 @@ function filtrarCognac(){
     nuevoProducto.innerHTML = `<div id=${vino.id} <div class="card" style="width: 14rem;">
     <img src="${vino.imagen}" class="card-img-top" alt="...">
     <div class="card-body">
-        <h5 class="card-title">${vino.marca}</h5>
-        <p class="card-text">${vino.tipo}</p>
-        <p class="card-text">${vino.precio}</p>
+    <h5 class="card-title fs-2 py-2">${vino.marca}</h5>
+    <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"  style="height: 1px;">
+    <div class="progress-bar bg-danger" style="width: 100%"></div>
+    </div>
+        <p class="tipo fs-4 py-3">${vino.tipo}.</p>
+        <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"  style="height: 1px;">
+    <div class="progress-bar bg-danger" style="width: 100%"></div>
+    </div>
+
+        <p class="${vino.precio} fs-3 fw-bold  card-text text-success">$ ${vino.precio}</p>
     
-    <button id ="btn-carrito${vino.id}" class="btnCompra btn btn-danger">Agregar al carrito</button>
+        <button id="btn-carrito${vino.id}" class="btnCompra btn btn-danger">Agregar al carrito</button>
     </div>
     </div>
     </div>`
@@ -363,11 +405,18 @@ function filtrarLicoroso(){
     nuevoProducto.innerHTML = `<div id=${vino.id} <div class="card" style="width: 14rem;">
     <img src="${vino.imagen}" class="card-img-top" alt="...">
     <div class="card-body">
-        <h5 class="card-title">${vino.marca}</h5>
-        <p class="card-text">${vino.tipo}</p>
-        <p class="card-text">${vino.precio}</p>
+    <h5 class="card-title fs-2 py-2">${vino.marca}</h5>
+    <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"  style="height: 1px;">
+    <div class="progress-bar bg-danger" style="width: 100%"></div>
+    </div>
+        <p class="tipo fs-4 py-3">${vino.tipo}.</p>
+        <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"  style="height: 1px;">
+    <div class="progress-bar bg-danger" style="width: 100%"></div>
+    </div>
+
+        <p class="${vino.precio} fs-3 fw-bold  card-text text-success">$ ${vino.precio}</p>
     
-    <button id ="btn-carrito${vino.id}" class="btnCompra btn btn-danger">Agregar al carrito</button>
+        <button id="btn-carrito${vino.id}" class="btnCompra btn btn-danger">Agregar al carrito</button>
     </div>
     </div>
     </div>`
@@ -455,11 +504,18 @@ function filtrarLicoroso(){
     nuevoProducto.innerHTML = `<div id=${vino.id} <div class="card" style="width: 14rem;">
     <img src="${vino.imagen}" class="card-img-top" alt="...">
     <div class="card-body">
-        <h5 class="card-title">${vino.marca}</h5>
-        <p class="card-text">${vino.tipo}</p>
-        <p class="card-text">${vino.precio}</p>
+    <h5 class="card-title fs-2 py-2">${vino.marca}</h5>
+    <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"  style="height: 1px;">
+    <div class="progress-bar bg-danger" style="width: 100%"></div>
+    </div>
+        <p class="tipo fs-4 py-3">${vino.tipo}.</p>
+        <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"  style="height: 1px;">
+    <div class="progress-bar bg-danger" style="width: 100%"></div>
+    </div>
+
+        <p class="${vino.precio} fs-3 fw-bold  card-text text-success">$ ${vino.precio}</p>
     
-        <button id="btn-carrito${vino.id}" class="btnCompra btn btn-danger">Agregar al carrito</a>
+        <button id="btn-carrito${vino.id}" class="btnCompra btn btn-danger">Agregar al carrito</button>
     </div>
     </div>
     </div>`
@@ -556,8 +612,8 @@ function cargarProductosCarrito (array){
             <div class="card-body">
                     <h4 class="card-title">${productoCarrito.marca}</h4>
                 
-                    <p class="card-text">$${productoCarrito.precio}</p> 
-                    <button id="botonEliminar" class= "btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                    <p class="card-text text-success">$${productoCarrito.precio}</p> 
+                    <button id="botonEliminar" class= "btn btn-danger"><i class="fas fa-trash-alt text-white"></i></button>
             </div>    
         
         
@@ -604,5 +660,8 @@ function compraTotal(...array){
 
     },0)
 
-    acumulador == 0 ? parrafoCompra.innerHTML = ` <strong> No hay productos en el carrito </strong>` : parrafoCompra.innerHTML = `El total de su carrito es ${acumulador}`
+    acumulador == 0 ? parrafoCompra.innerHTML = `
+    <p class="d-flex justify-content-center py-4 "> <strong > No hay productos en el carrito</strong>  <i class="fa-solid fa-wine-glass-empty m-2 fs-3" style="color: #511f24;"></i> </p>
+        `
+        : parrafoCompra.innerHTML = `<p class="btn-success fs-2 m-4"> El total de su carrito es <strong class="text-success"</strong> $ ${acumulador} </p>`
 }   

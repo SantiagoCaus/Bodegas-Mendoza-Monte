@@ -6,6 +6,7 @@
     
     <!-- Font Awesome icons -->
 
+
 <script src="https://kit.fontawesome.com/dd5345a2a2.js" crossorigin="anonymous"></script>
 
 <!-- Toastify -->
@@ -114,7 +115,7 @@
     
                             <li class="nav-item p-1 py-md-1 fs-2 "><a href="../index.html" class="nav-link">Home</a></li>
                             <li class="nav-item p-1 py-md-1 fs-2  "><a href="#"class="nav-link">Bodega</a></li>
-                            <li class="nav-item p-1 fs-2 "><a href="#"class="nav-link">Precios</a></li>
+                            <li class="nav-item p-1 fs-2 "><a href="./PAGES/precios.html"class="nav-link">Precios</a></li>
                             <li class="py-4">
                                     <button class="switch" id="switch">
                                     <span class="span-icon"><i class="fas fa-sun fs"></i></span>
@@ -123,9 +124,9 @@
                                     </button>
                             </li>
                             <li class="nav-item py-4">
-                                <form role="search-cervezas">
+                                <form role="search-malbec">
                                     <div class="d-flex">
-                                    <input id="inputBuscador" class="form-control" type="search" placeholder="Buscar..." aria-label="Search"><i id="search" class="fa-sharp fa-solid fa-magnifying-glass  text-white m-2 fs-2"></i>
+                                    <input id="inputBuscador" class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search"><i id="search" class="fa-sharp fa-solid fa-magnifying-glass  text-white m-2 fs-2"></i>
                                 </div>
                                     </form>
                             </li>
@@ -135,21 +136,24 @@
                             
                             <div class="modal" tabindex="-1" id="idModal">
                                 <div class="modal-dialog">
-                                    <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title">Carrito de Compras</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="#idmodal" aria-label="Close"></button>
+                                    <div class="modal-content  pt-4">
+                                    <div class="modal-header justify-content-center">
+                                        <h5 class="fs-2 py-md-1 d-flex">Carrito de Compras <i class="fa-brands fa-shopify fs-1" style="color: #8f0000;"></i></h5>
                                     </div>
+                                    <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"  style="height: 1px;">
+                                        <div class="progress-bar bg-danger" style="width: 100%"></div>
+                                        </div>
                                     <div id="modal-body">
-                                        
                                     </div>
                                     <div class="row ml-alto">
                                         <p id="precioTotal"></p>
-                            
                                     </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-                                        <button type="button" id="botonFinalizarCompra" class="btn btn-success">Finalizar Compra</button>
+                                    <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"  style="height: 1px;">
+                                        <div class="progress-bar bg-danger" style="width: 100%"></div>
+                                        </div>
+                                    <div class="modal-footer justify-content-center">
+                                        <button type="button" class="btn btn-danger m-2" data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" id="botonFinalizarCompra" class="btn btn-success m-2">Finalizar Compra</button>
                                     </div>
                                     </div>
                                 </div>
@@ -163,10 +167,10 @@
                         <!-- Enlaces redes sociales -->
     
                         <div  class="d-lg-none align-self-center py-3">
-                            <a class="text-white"  href="https://www.instagram.com/cr_nailsss/" target="_blank"><i id="instagram"  class="bi bi-instagram px-2 fs-2"></i></a>
-                            <a class="text-white"  href="https://www.facebook.com/profile.php?id=100059711157042" target="_blank"><i id="facebook" class="bi bi-facebook px-2 fs-2"></i></i></a>
-                            <a class="text-white"  href=" https://twitter.com/rodriguezp_c?t=CGtr_S7VwdEb2f67kHjxlA&s=08" target="_blank"><i id="twitter" class="bi bi-twitter px-2 fs-2"></i></a>
-                            <a  class="text-white" href="https://wa.me/542226604213"target="_blank"><i id="whatsapp" class="bi bi-whatsapp px-2 fs-2"></i></a>
+                            <a class="text-white"  href="https://www.instagram.com/cr_nailsss/" target="_blank"><i id="instagram"  class="bi bi-instagram px-2 fs-2 text-white"></i></a>
+                            <a class="text-white"  href="https://www.facebook.com/profile.php?id=100059711157042" target="_blank"><i id="facebook" class="bi bi-facebook px-2 fs-2 text-white"></i></i></a>
+                            <a class="text-white"  href=" https://twitter.com/rodriguezp_c?t=CGtr_S7VwdEb2f67kHjxlA&s=08" target="_blank"><i id="twitter" class="bi bi-twitter px-2 fs-2 text-white"></i></a>
+                            <a  class="text-white" href="https://wa.me/542226604213"target="_blank"><i id="whatsapp" class="bi bi-whatsapp px-2 fs-2 text-white"></i></a>
                         </div>
                     
                     </div>
@@ -182,6 +186,7 @@
     </header>
 
     <!-- FIN HEADER -->
+    
 
 
     <!-- INICIO MAIN -->
@@ -193,42 +198,42 @@
             <div class="main-container d-flex">
             <div class="sidebar" id="side_nav">
                 <div class="header-box px-3 pb-4 mt-5">
-                <h1 class="fs-4"><span class="bg-warning text-dark rounded shadow px-2 me-2">EM</span>Bebidas</h1>
+                <h1 type="radio" class="fs-2"><span class="bg-warning text-dark rounded shadow px-2 me-2 span">EM</span>Bebidas</h1>
                     
                 </div>
                 <div class="filtro-radio p-2">
-                <h5>Malbec</h5>
+                <h5 class="fs-3">Malbec</h5>
                 <input type="radio" id="search-malbec">
             </div>
             <div class="filtro-radio p-2">
-                <h5>Dulce</h5>
+                <h5 class="fs-3">Dulce</h5>
                 <input type="radio" id="search-dulce">
             </div>
             <div class="filtro-radio p-2">
-                <h5>Espumante</h5>
+                <h5 class="fs-3">Espumante</h5>
                 <input type="radio" id="search-champagne">
             </div>
             <div class="filtro-radio p-2">
-                <h5>Roble</h5>
+                <h5 class="fs-3">Roble</h5>
                 <input type="radio" id="search-roble">
             </div>
             <div class="filtro-radio p-2">
-                <h5>Cabernet</h5>
+                <h5 class="fs-3">Cabernet</h5>
                 <input type="radio" id="search-cabernet">
             </div>
             <div class="filtro-radio p-2">
-                <h5>Cognac</h5>
+                <h5 class="fs-3">Cognac</h5>
                 <input type="radio" id="search-cognac">
             </div>
             <div class="filtro-radio p-2">
-                <h5>Licoroso</h5>
+                <h5 class="fs-3">Licoroso</h5>
                 <input type="radio" id="search-licoroso">
             </div>
                 <hr class="h-color mx-3">
 
             
-                <a class="btn fs-5" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                <i class="fa-sharp fa-solid fa-plus text-white"></i>Agregar Bebida
+                <a class="btn fs-5 fs-4" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <i class="fa-sharp fa-solid fa-plus text-dark"></i>Agregar Bebida
                 </a>
                 
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
@@ -245,7 +250,7 @@
                     <label class="form-label" for="precio">Ingrese el precio</label><br>
                     <input type="text" id="precioInput" name="precio" class="form-control" required><br>
                     <input type="file" name="archivo" id="archivo">
-                    <button type="button" class="btn btn-success m-3" id="boton-file">Seleccione un archivo</button>
+                    <button type="button" class="btn btn-success" id="boton-file">Seleccione un archivo</button>
                 </form>
                 
                 <button id="botonGuardar" class="btn btn-danger m-2">Guardar Bebida</button>
@@ -253,14 +258,126 @@
                 </div>
             </div>
             </div>
-            <div class="py-5" id="productos">
+
+            <div class="py-4 m-3" id="productos">
             </div>
+
         </section>
 
 
 
-        </main>
+        <!-- </main> -->
         
+        <!-- INICIO FOOTER -->
+
+        <footer class="bg-dark text-white pt-5 pb-4">
+
+            <div class="conteiner text-center text-md-start">
+                <div class="row text-center text-md-start">
+        
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        
+                        <h5 class="text-uppercase md-4 fw-bold">Bodega</h5>
+                        
+                        <hr class="mb-4">
+        
+                        <p>
+                            En San Miguel del Monte, los vinos mendocinos son el deleite de la montaña, visita la Bodega para tener mas informacion </p>
+                    </div>
+                    
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h5 class="text-uppercase md-4 fw-bold ">Consultas</h5>
+                        <hr class="md-4">
+                        <p>
+                            <a href="./Pages/Contacto.html" target="_blank" class="text-white text-decoration-none">Tu cuenta</a>
+                        </p>
+                        <p>
+                            <a href="./Pages/Contacto.html" target="_blank" class="text-white text-decoration-none">Tus ordenes</a>
+                        </p>
+                        <p>
+                            <a href="./Pages/Contacto.html" target="_blank" class="text-white text-decoration-none">Manejo de cuenta</a>
+                        </p>
+                        <p>
+                            <a href="./Pages/Contacto.html" target="_blank" class="text-white text-decoration-none">Ayuda</a>
+                        </p>
+        
+                    </div>
+        
+                
+        
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h5 class="text-uppercase md-4 fw-bold ">Precios</h5>
+                        <hr class="md-4">
+                        <p>
+                            <a href="./Pages/Precios.html" target="_blank" class="text-white text-decoration-none">Precios Accesibles</a>
+                        </p>
+                        <p>
+                            <a href="./Pages/Precios.html"  target="_blank" class="text-white text-decoration-none">Dulces</a>
+                        </p>
+                        <p>
+                            <a href="./Pages/Precios.html"  target="_blank" class="text-white text-decoration-none">Malbec</a>
+                        </p>
+                        <p>
+                            <a href="./Pages/Precios.html"  target="_blank" class="text-white text-decoration-none">Ver mas</a>
+                        </p>
+                    </div>
+        
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h5 class="text-uppercase md-4 fw-bold ">Contacto</h5>
+                        <hr class="md-4">
+                        <p>
+                            <i class="bi bi-house-door-fill me-3"></i>Argentina,Ciudad de Buenos Aires</li>
+                        </p>
+                        <p>
+                            <i class="bi bi-envelope-at-fill me-3"></i>santiagocaus7@gmail.com</li>
+                        </p>
+                        <p>
+                            <i class="bi bi-telephone-fill me-3"></i>2226 60-4213</li>
+                        </p> 
+                    </div>
+        
+                    <hr class="mb-4">
+                    
+                    <div class="text-center mb-2">
+                        <p>
+                            Copyright Todos los derechos reservados <a href="#" class="text-white">
+        
+                                <strong>Santiago Caus</strong> </a>
+                        </p>
+        
+                    </div>
+        
+                    <div class="text-center">
+        
+        <ul class="list-unstyled list-inline">
+        
+            <li class="list-inline-item">
+                <a href="https://github.com/SantiagoCaus" class="text-white" target="_blank"><i class="bi bi-github fs-2"></i></a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://wa.me/542226540704" class="text-white" target="_blank"><i class="bi bi-whatsapp fs-2" ></i></a>
+            </li>
+        
+            <li class="list-inline-item">
+                <a href="https://www.instagram.com/santiagocaus/" class="text-white" target="_blank"><i class="bi bi-instagram fs-2" ></i></a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/santiago-caus-139915250/" class="text-white" target="_blank"><i class="bi bi-linkedin fs-2" ></i></a>
+            </li>
+        
+        </ul>
+        
+                    </div>
+        
+                </div>
+        
+            </div>
+        
+            
+        
+        </footer>
+        
+        <!-- Fin Footer -->
 
     
     
@@ -296,8 +413,9 @@
 
 <script src="../JS/darkMode.js"></script>
 <script src="../JS/class.js"></script>
-<script src="../JS/main.js"></script>
-<script src="../JS/bebidas.js"></script>
+<script src="./JS/main.js"></script>
+
+
 
 
 

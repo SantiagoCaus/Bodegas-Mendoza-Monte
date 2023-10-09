@@ -11850,6 +11850,132 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/* Mobile */
+@media (min-width: 320px) and (max-width: 576px) {
+  .main__encabezado {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+  .descripcion {
+    font-size: 10px;
+    display: flex;
+    width: 100%;
+  }
+  .ver__mas {
+    width: 100%;
+  }
+  .icono {
+    width: 10px;
+  }
+  .titulo {
+    font-size: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+  .Destacados {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+  .cuatro__imagenes {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+  }
+  .contacto {
+    font-size: 30px;
+  }
+  .visitanos__titulo {
+    font-size: 30px;
+  }
+  .datos {
+    display: flex;
+    flex-direction: column;
+  }
+  .datos h3, .datos .h3 {
+    font-size: 20px;
+  }
+  .plan__visit {
+    font-size: 20px;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Archivo de precios */
+  .form {
+    margin: 0;
+  }
+  .full-screen-container {
+    height: 100%;
+  }
+  .login__button {
+    padding: 1em 1em;
+    font-size: 1rem;
+  }
+}
+/* Tablet */
+@media only screen and (min-width: 577px) and (max-width: 991px) {
+  .main__encabezado {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+  .titulo {
+    font-size: 90px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+  .ver__mas {
+    width: 100%;
+  }
+  .Destacados {
+    flex-wrap: wrap;
+  }
+  .cuatro__imagenes {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+  }
+  .contacto {
+    font-size: 30px;
+  }
+  .datos {
+    display: flex;
+    flex-direction: column;
+  }
+  .datos__opcionales {
+    display: none;
+  }
+  .background__uvas {
+    display: none;
+  }
+  /* Archivo de precios main */
+  .login__container {
+    padding: 20px 20px;
+    margin: 30px 20px;
+    width: 80%;
+    height: 100vh;
+    max-width: 600px;
+  }
+  .login__button {
+    padding: 1em 1em;
+    font-size: 1rem;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -11891,46 +12017,57 @@ textarea.form-control-lg {
   }
 }
 /*Fin Flecha hacia arriba*/
-.contenedor {
-  display: flex;
-  justify-content: center;
+.background__img {
+  background-image: url(../IMG/background-index.jpg);
+  background-size: cover;
 }
 
 .titulo {
-  color: white;
-  font-size: 70px;
+  font-size: 100px;
+  font-family: "Lora", serif;
+  display: flex;
+  color: rgb(64, 14, 21);
+  flex-direction: row-reverse;
+  justify-content: center;
 }
-.titulo a {
-  text-decoration: none;
+
+.ver__mas {
+  width: 100%;
   color: white;
-  padding: 1rem 1rem;
-  font-weight: 600;
-  background-color: black;
-  margin: 50px;
-  transition: transform 0.2s;
-  border-radius: 10px;
-  transition: background-color 1s ease;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
 }
-.titulo a:hover {
-  color: black;
-  background-color: #FFE17B;
+
+.fondo__destacados {
+  background-color: rgb(248, 245, 245);
+}
+
+.cuatro__imagenes {
+  display: flex;
+  justify-content: space-around;
 }
 
 #productos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: baseline;
-  justify-items: center;
-  font-size: large;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 0 auto;
+  padding: 80px;
 }
 
-.card {
-  margin: 1rem auto;
-  border: 1px solid black;
-  background-color: whitesmoke;
-  align-items: center;
+#archivo {
+  display: none;
+}
+
+.card-in {
+  height: auto;
+  width: 150px;
+}
+
+.bebidas {
+  display: flex;
+  margin: 10px;
 }
 
 .navbar {
@@ -11947,6 +12084,8 @@ textarea.form-control-lg {
 }
 
 .btn {
+  padding: 10px;
+  border-radius: 20px;
   margin: 2px;
 }
 
@@ -11955,28 +12094,22 @@ textarea.form-control-lg {
   flex-direction: column;
 }
 
-#productos {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 40px;
-  margin: 0 auto;
-  padding: 80px;
-}
-
 .card {
-  box-shadow: 0.4px 1px 2px black;
+  box-shadow: 0.2px 1px 2px black;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: beige;
 }
 
 img {
   height: 200px;
   width: 200px;
-  object-fit: contain;
+}
+
+.img-fluid {
+  width: 262px;
+  height: 262px;
 }
 
 .filtro {
@@ -12009,13 +12142,14 @@ img {
 i {
   margin: 5px;
   font-size: 20px;
-  color: #FFE17B;
+  color: white;
 }
 
 #modal-body {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  margin: 30px;
 }
 
 /* CLase prueba ternario */
@@ -12038,17 +12172,17 @@ i {
 }
 
 hr.h-color {
-  background: #eee;
+  background: white;
 }
 
 .main {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .sidebar li.active {
-  background-color: #eee;
+  background-color: white;
   border-radius: 8px;
 }
 
@@ -12063,6 +12197,173 @@ hr.h-color {
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
+}
+
+/* clases de sweet alert */
+.swa-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.swa-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.full-screen-container {
+  background-image: url(../img/Stock-precios.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__title {
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: normal;
+  color: beige;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  transition: 1s;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 red;
+}
+
+.login__container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  background-color: hsla(355, 15%, 7%, 0.7);
+  box-shadow: 0 0 15px 0 red;
+  padding: 40px 30px;
+  width: 80%;
+  /* max-width: 600px; */
+}
+
+.go__pdf {
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  border: 1px solid red;
+  padding: 20px 40px 20px 40px;
+}
+
+.go__pdf:hover {
+  color: white;
+  transition: 0.4s;
+  border: 1px solid black;
+  box-shadow: 0 0 15px 0 red;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.input__group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.messagge {
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  background-color: hsla(355, 15%, 7%, 0.3);
+  width: 100%;
+  font-weight: lighter;
+  border-radius: 0.25rem;
+}
+
+.messagge:hover {
+  background-color: hsla(355, 15%, 7%, 0.3);
+  box-shadow: 0 0 15px 0 red;
+}
+
+::placeholder {
+  color: white;
+}
+
+.login__button {
+  padding: 0.5em 1em;
+  font-size: 2rem;
+  font-weight: lighter;
+  color: white;
+  background-color: hsla(355, 15%, 7%, 0.3);
+  border: 1px solid black;
+  border-radius: 0.25em;
+  outline: none;
+  cursor: pointer;
+}
+
+.login__button:hover {
+  box-shadow: 0 0 15px 0 red;
+}
+
+.datos {
+  background-color: #280400;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  height: 50%;
+}
+
+.datos h3, .datos .h3 {
+  font-size: 40px;
+}
+
+.datos p {
+  font-style: italic;
+}
+
+.learn__more {
+  text-decoration: none;
+  color: whitesmoke;
+  border: 1px solid;
+  border-color: rgba(232, 226, 215, 0.2);
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0);
+  font-style: italic;
+}
+
+.learn__more:hover {
+  transition: 0.4s;
+  border-color: antiquewhite;
+  color: antiquewhite;
+}
+
+.visitanos__titulo {
+  font-size: 100px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: rgb(64, 14, 21);
+}
+
+.plan__visit {
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(64, 14, 21);
+  border: 1px solid rgb(64, 14, 21);
+  padding: 20px 40px 20px 40px;
+}
+
+.plan__visit:hover {
+  background-color: rgb(64, 14, 21);
+  color: white;
+  transition: 0.4s;
+}
+
+.background__uvas {
+  background: url(../img/background-uvas.png);
+  /* padding: 80px 0px; */
 }
 
 body {
@@ -12127,7 +12428,7 @@ body.dark #side_nav h2, body.dark #side_nav .h2, body.dark #side_nav h5, body.da
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 .switch.active {
-  background-color: rgb(226, 192, 128);
+  background-color: white;
   color: #000;
 }
 .switch.active::after {
