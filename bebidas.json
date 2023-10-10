@@ -4,98 +4,98 @@
         "marca" : "Finca Gabriel",
         "tipo" : "Espumante",
         "precio" :  3300,
-        "imagen" : "../IMG/finca-gabriel-brut-nature-espumante.jpg"
+        "imagen" : "./IMG/finca-gabriel-brut-nature-espumante.jpg"
     },
     {
         "id" : 2,
         "marca" : "Finca Gabriel",
         "tipo" : "Espumante",
         "precio" : 3300,
-        "imagen" : "../IMG/finca-gabriel-espumante-demiSec.jpeg"
+        "imagen" : "./IMG/finca-gabriel-espumante-demiSec.jpeg"
     },
     {
         "id" : 3,
         "marca" : "Finca Gabriel",
         "tipo" : "Roble",
         "precio" : 2160,
-        "imagen" : "../IMG/finca-gabriel-cabernet-roble.png"
+        "imagen" : "./IMG/finca-gabriel-cabernet-roble.png"
     },
     {
         "id" : 4,
         "marca" : "Finca Gabriel",
         "tipo" : "Roble",
         "precio" : 2160,
-        "imagen" : "../IMG/finca-gabriel-merlot-roble.png"
+        "imagen" : "./IMG/finca-gabriel-merlot-roble.png"
     },
     {
         "id" : 5,
         "marca" : "Finca Gabriel",
         "tipo" : "Roble",
         "precio" : 2160,
-        "imagen" : "../IMG/finca-gabriel-syrah-roble.png"
+        "imagen" : "./IMG/finca-gabriel-syrah-roble.png"
     },
     {
         "id" : 6,
         "marca" : "Finca Gabriel",
         "tipo" : "Roble",
         "precio" : 2160,
-        "imagen" : "../IMG/finca-gabriel-tempranillo-roble.png"
+        "imagen" : "./IMG/finca-gabriel-tempranillo-roble.png"
     },
     {
         "id" : 7,
         "marca" : "Privado",
         "tipo" : "Espumante",
         "precio" : 3840,
-        "imagen" : "../IMG/privado-chardonnay-roble.jpeg"
+        "imagen" : "./IMG/privado-chardonnay-roble.jpeg"
     },
     {
         "id" : 8,
         "marca" : "Privado",
         "tipo" : "Malbec",
         "precio" : 3840,
-        "imagen" : "../IMG/privado-malbec-roble.png"
+        "imagen" : "./IMG/privado-malbec-roble.png"
     },
     {
         "id" : 9,
         "marca" : "Privado",
         "tipo" : "Roble",
         "precio" : 3840,
-        "imagen" : "../IMG/privado-tempranillo-roble.jpg"
+        "imagen" : "./IMG/privado-tempranillo-roble.jpg"
     },
     {
         "id" : 10,
         "marca" : "Mil Vientos",
         "tipo" : "Malbec",
         "precio" : 6200,
-        "imagen" : "../IMG/milVientos-malbec.png"
+        "imagen" : "./IMG/milVientos-malbec.png"
     },
     {
         "id" : 11,
         "marca" : "Mil Vientos",
         "tipo" : "Cabernet",
         "precio" : 3900,
-        "imagen" : "../IMG/milVientos-cabernet-sauvignon.png"
+        "imagen" : "./IMG/milVientos-cabernet-sauvignon.png"
     },
     {
         "id" : 12,
         "marca" : "Mil Vientos",
         "tipo" : "Malbec",
         "precio" : 3900,
-        "imagen" : "../IMG/milVientos-malbec-rose.png"
+        "imagen" : "./IMG/milVientos-malbec-rose.png"
     },
     {
         "id" : 13,
         "marca" : "Mil Vientos",
         "tipo" : "Dulce",
         "precio" : 3900,
-        "imagen" : "../IMG/milVientos-torrontes-dulce-natural.png"
+        "imagen" : "./IMG/milVientos-torrontes-dulce-natural.png"
     },
     {
         "id" : 14,
         "marca" : "Finca Gabriel",
         "tipo" : "Roble",
         "precio" : 2400,
-        "imagen" : "../IMG/finca-gabriel-chardonnay-roble.png"
+        "imagen" : "./IMG/finca-gabriel-chardonnay-roble.png"
     },
     {
         "id" : 15,
@@ -109,70 +109,70 @@
         "marca" : "Finca Gabriel",
         "tipo" : "Malbec",
         "precio" : 2160,
-        "imagen" : "../IMG/finca-gabriel-malbec-roble.png"
+        "imagen" : "./IMG/finca-gabriel-malbec-roble.png"
     },
     {
         "id" : 17,
         "marca" : "Finca Gabriel",
         "tipo" : "Tinto Tardio Edicion Especial",
         "precio" : 2880,
-        "imagen" : "../IMG/finca-gabriel-tintoTardio.jpeg"
+        "imagen" : "./IMG/finca-gabriel-tintoTardio.jpeg"
     },
     {
         "id" : 18,
         "marca" : "Finca Gabriel",
         "tipo" : "Dulce",
         "precio" : 2400,
-        "imagen" : "../IMG/finca-gabriel-rose.jpg"
+        "imagen" : "./IMG/finca-gabriel-rose.jpg"
     },
     {
         "id" : 19,
         "marca" : "Privado",
         "tipo" : "Espumante",
         "precio" : 6960,
-        "imagen" : "../IMG/espumante-extraBrut.jpg"
+        "imagen" : "./IMG/espumante-extraBrut.jpg"
     },
     {
         "id" : 20,
         "marca" : "Tucumen",
         "tipo" : "Malbec",
         "precio" : 1950,
-        "imagen" : "../IMG/tucumen-malbec.jpg"
+        "imagen" : "./IMG/tucumen-malbec.jpg"
     },
     {
         "id" : 21,
         "marca" : "Siempre Tengo Un Plan B",
         "tipo" : "Malbec",
         "precio" : 1800,
-        "imagen" : "../IMG/stupb-malbec.jpeg"
+        "imagen" : "./IMG/stupb-malbec.jpeg"
     },
     {
         "id" : 22,
         "marca" : "Sinergia",
         "tipo" : "Malbec",
         "precio" : 1647,
-        "imagen" : "../IMG/sinergia-malbec.jpg"
+        "imagen" : "./IMG/sinergia-malbec.jpg"
     },
     {
         "id" : 23,
         "marca" : "Marginal",
         "tipo" : "Licoroso",
         "precio" : 4560,
-        "imagen" : "../IMG/marginal-tintoLicoroso.png"
+        "imagen" : "./IMG/marginal-tintoLicoroso.png"
     },
     {
         "id" : 24,
         "marca" : "Viejo Gabriel",
         "tipo" : "Cognac",
         "precio" : 15480,
-        "imagen" : "../IMG/cognac-viejoGabriel.jpeg"
+        "imagen" : "./IMG/cognac-viejoGabriel.jpeg"
     },
     {
         "id" : 25,
         "marca" : "Premiado",
         "tipo" : "Malbec",
         "precio" : 1900,
-        "imagen" : "../IMG/premiado-malbec.jpg"
+        "imagen" : "./IMG/premiado-malbec.jpg"
     }
 ]
 
